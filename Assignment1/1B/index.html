@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking</title>
+  <link rel="stylesheet" type="text/css" href="styles3.css">
+</head>
+<body>
+  <header>
+    <h1>Flight Booking</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#search">Search Flights</a></li>
+      <li><a href="#book">Book a Flight</a></li>
+      <li><a href="#manage">Manage Booking</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="search">
+      <h2>Search Flights</h2>
+      <form>
+        <label>From:</label>
+        <input type="text" name="from" required>
+        <br>
+        <label>To:</label>
+        <input type="text" name="to" required>
+        <br>
+        <label>Departure Date:</label>
+        <input type="date" name="departure" required>
+        <br>
+        <label>Return Date:</label>
+        <input type="date" name="return">
+        <br>
+        <input type="submit" value="Search">
+      </form>
+    </section>
+    <section id="book">
+      <h2>Book a Flight</h2>
+      <form>
+        <label>From:</label>
+        <input type="text" name="from" required>
+        <br>
+        <label>To:</label>
+        <input type="text" name="to" required>
+        <br>
+        <label>Departure Date:</label>
+        <input type="date" name="departure" required>
+        <br>
+        <label>Return Date:</label>
+        <input type="date" name="return">
+        <br>
+        <label>Number of Passengers:</label>
+        <input type="number" name="passengers" min="1" required>
+        <br>
+        <label>Class:</label>
+        <select name="class">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First</option>
+        </select>
+        <br>
+        <input type="submit" value="Book">
+      </form>
+    </section>
+    <section id="manage">
+      <h2>Manage Booking</h2>
+      <form>
+        <label>Booking Reference:</label>
+        <input type="text" name="reference" required>
+        <br>
+        <input type="submit" value="Check">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright ©2022 Flight Booking</p>
+  </footer>
+</body>
+</html>
