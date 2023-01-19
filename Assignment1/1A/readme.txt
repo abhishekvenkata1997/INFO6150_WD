@@ -30,9 +30,11 @@ CSS Tags:
 2. .table{} - This tag is used to add styling to our table like width height border and padding
 3. header{} - Adding styles like color, padding, text-align and font size to our header.
 4. nav{} - Adding styles like color, padding, text-align and font size to our navigation bar.
-5. nav ul, nav li, nav a -  Adding specific styles to specific tags will help us add styling to only those parts like 
+5. nav ul, nav li, nav a{} -  Adding specific styles to specific tags will help us add styling to only those parts like 
                             text-color, padding and whatever specific requirement for each node of the page
-6. main, main section, main h2 - Adding tags like display, text-align, margin, box-shadow, font-size and bgcolor and others
-7. footer, footer p, footer ul, footer li, footer a - These are footer specific tags to add tags like margin, padding, 
-                                                      list-style, text-decoration and text-align and display 
-                                                      
+6. main, main section, main h2{} - Adding tags like display, text-align, margin, box-shadow, font-size and bgcolor and others
+7. footer, footer p, footer ul, footer li, footer a{} - These are footer specific tags to add tags like margin, padding, 
+                                                  list-style, text-decoration and text-align and display 
+8. <input> email, password, submit{} - Adding style like font-size, padding, margin and border to the input types
+9. <button> submit, submit{}: hover: Adding styles like background-color, font-size, padding, border, margin and cursor. and color for hover
+
