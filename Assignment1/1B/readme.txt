@@ -24,6 +24,16 @@ The home page has a navigation bar that moves to you the specific section mentio
                copyright information, and links to related resources.
 18. <label> - It is used to provide a text description for a form control such as a text field, checkbox or radio button.
 
+19. <audio> - This tag is used to embed an audio file (audio-file.mp3) into the webpage. The controls attribute is 
+              added to the <audio> tag to enable the built-in controls like play, pause and volume control. 
+              The <source> tag is used to specify the source of the audio file.
+20. <iframe> - It is an HTML element that allows you to embed another HTML document within the 
+               current HTML document. It can be used to embed videos, maps, audio players, PDFs,
+                and other types of multimedia content on a web page.
+21. iframe allow - The allow attribute can be used to enable or disable certain features, such as allowing the iframe to run 
+                scripts, use forms, and navigate to other pages.
+
+
 CSS Tags:
 
 1. body {} - This tag is used to add font-type, background color, display that we are using throughout the body of oue webpage
@@ -38,3 +48,17 @@ CSS Tags:
 8. <input> email, password, submit{} - Adding style like font-size, padding, margin and border to the input types
 9. <button> submit, submit{}: hover: Adding styles like background-color, font-size, padding, border, margin and cursor. and color for hover
 
+10. <iframe>: Adding tags like border, margin, text-align etc
+11. audio, video: The margin and width tags for the specific audio and video 
+12. body::before:  Before pseudo-element is a CSS selector that allows you to insert content before the content of an element. 
+                It is commonly used to add a background image, a background color, or any other kind of styling to an element 
+                without actually modifying the content of the element
+
+13. z-score: In CSS, the term "z-index" is used to control the stacking order of elements on a webpage. 
+            It determines the order in which elements are stacked on top of one another, with elements having 
+            a higher z-index appearing in front of elements with a lower z-index.
+
+14. background-image, position, attachment, opacity: The CSS background value helps set up the values for our background in our 
+                                                     html page
+
+                                                    
