@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Josefin Sans',sans-serif;
     box-sizing: border-box;
-  }
+  }     
 
  
  .hero{
@@ -98,11 +98,6 @@
     padding: 100px 0px;
   }
 
-/* .table-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    } */
     .table-container {
         position: absolute; /* allows element to be positioned relative to its container */
         top: 40%; /* move the container to the middle of the vertical axis */
