@@ -1,0 +1,225 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+  }
+
+ 
+ .hero{
+    height:100vh;
+    width:100%;
+    background-image: url(../images/bg-image.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  .logo
+  {
+    color: red;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  
+  }
+  
+  span{
+    color: #f9004d
+  }
+  
+  nav ul li
+  {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px; 
+  }
+  
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  nav ul li a:hover
+  {
+    color:#f9004d;
+    transition: 0.4s;
+  }
+  
+  .btn
+  {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px  25px;
+    border-radius: 30px;
+    transition: transform .4s;
+  }
+  
+  .btn:hover
+  {
+    transform: scale(1.2);
+  }
+  
+  button
+  {
+    background-color: #f9004d;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  button:hover
+  {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  
+  .service
+  {
+    width: 100%;
+    padding: 100px 0px;
+  }
+
+/* .table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    } */
+    .table-container {
+        position: absolute; /* allows element to be positioned relative to its container */
+        top: 40%; /* move the container to the middle of the vertical axis */
+        left: 45%; /* move the container to the middle of the horizontal axis */
+        transform: translate(-50%, -50%); /* move the container back up and left by 50% */
+      }
+      
+  
+  .black-hue-table {
+    width: 120%;
+    border-collapse: collapse;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* add shadow to the table */
+  }
+  .pink
+  {
+    color:#fcfc;
+  }
+  .black-hue-table th,
+  .black-hue-table td {
+    padding: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; /* increase font size */
+  }
+
+  .black-hue-table td .oneline
+  {
+    display: inline-block;
+  }
+
+  .black-hue-table th {
+    background-color: #151515;
+    text-align: center;
+    color: #f9004d;
+    text-transform: uppercase; /* capitalize head rows */
+    font-size: 1.4em;
+    
+     /* increase font size for head rows */
+  }
+  
+  .black-hue-table td{
+    background-color: #202020;
+  }
+  
+  
+  .title h2
+  {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  footer
+  {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p:nth-child(1)
+  {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;  
+  }
+  
+  footer p:nth-child(2)
+  {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  
+  }
+  
+  .social
+  {
+    display: flex;
+  }
+  .social a
+  {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social a:hover
+  .black-hue-table td a
+  {
+    transform: scale(1.3);
+    transition: 0.3s;
+  }
+  
+  .end
+  {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+    
+  }
