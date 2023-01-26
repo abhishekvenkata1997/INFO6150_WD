@@ -73,6 +73,24 @@
     transform: scale(1.2);
   }
   
+  button
+  {
+    background-color: #f9004d;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  button:hover
+  {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
   
   .card-container {
     text-align: center;
@@ -102,7 +120,7 @@
   }
 
   .card h3{
-    color: rgb(250, 95, 95);
+    color: rgb(254, 59, 59);
     padding-bottom: 15px;
   }
 
@@ -186,3 +204,140 @@
     font-size: 14px;
     
   }
+
+  @media only screen and (max-width: 768px) {
+    .main {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo {
+    font-size: 25px;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav ul li {
+    padding: 10px;
+    }
+    
+    nav ul li a{
+     float:left;
+     font-size: 12px;
+     text-align: center;
+    }
+
+    h1, h3 {
+    font-size: 20px;
+    }
+    
+    .card-container {
+
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+      }
+     .card {
+        margin:40px;
+        align-items: center;
+        width: 40%;
+        height: 40%;
+        
+        flex-direction: row;
+        margin: 10px 10px;
+      }
+
+      .card h3, .card p
+      {
+          font-size: 10px;
+      }
+  
+
+    footer p {
+    font-size: 10px;
+    }
+    
+    .social a {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    }
+    }
+  
+    @media only screen and (max-width: 480px) {
+      
+    nav{
+      flex-wrap: column;
+      justify-content: center;
+      }
+      nav ul li{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 0;
+      text-align: left;
+      font-size: 2px;
+      }
+      .card-container {
+
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+      }
+     .card {
+        margin:40px;
+        align-items: center;
+        width: 30%;
+        height: 20%;
+        
+        flex-direction: row;
+        margin: 10px 10px;
+      }
+
+    .card h3, .card p
+    {
+        font-size: 8px;
+    }
+
+
+
+
+      footer p
+      {
+        font-size: 15px;
+      }
+      footer p:nth-child(2){
+      width: 80%;
+      }
+      .social{
+      justify-content: center;
+      }
+      }
+      
+      @media only screen and (max-width: 320px) {
+      nav
+      {
+        flex-direction: column;
+      }
+      h1{
+      font-size: 50px;
+      }
+      h3{
+      font-size: 20px;
+      }
+      }
+     
+      
+      
+      
+      

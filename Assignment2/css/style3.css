@@ -73,25 +73,6 @@
     transform: scale(1.2);
   }
   
-  button
-  {
-    background-color: #f9004d;
-    color:white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .4s;
-  }
-  
-  button:hover
-  {
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-  }
-  
   .service
   {
     width: 100%;
@@ -99,10 +80,10 @@
   }
 
     .table-container {
-        position: absolute; /* allows element to be positioned relative to its container */
-        top: 40%; /* move the container to the middle of the vertical axis */
-        left: 45%; /* move the container to the middle of the horizontal axis */
-        transform: translate(-50%, -50%); /* move the container back up and left by 50% */
+        position: absolute; 
+        top: 40%; 
+        left: 45%; 
+        transform: translate(-50%, -50%); 
       }
       
   
@@ -110,7 +91,7 @@
     width: 120%;
     border-collapse: collapse;
     color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* add shadow to the table */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
   }
   .pink
   {
@@ -123,7 +104,7 @@
     padding-right: 10px;
     border: none;
     border-radius: 8px;
-    font-size: 1.2em; /* increase font size */
+    font-size: 1.2em; 
   }
 
   .black-hue-table td .oneline
@@ -135,10 +116,10 @@
     background-color: #151515;
     text-align: center;
     color: #f9004d;
-    text-transform: uppercase; /* capitalize head rows */
+    text-transform: uppercase; 
     font-size: 1.4em;
     
-     /* increase font size for head rows */
+
   }
   
   .black-hue-table td{
@@ -218,3 +199,130 @@
     font-size: 14px;
     
   }
+
+  @media only screen and (max-width: 768px) {
+    .main {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    /* Make logo smaller */
+    .logo {
+    font-size: 25px;
+    }
+    
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav ul li {
+    padding: 10px;
+    }
+    
+    nav ul li a{
+     float:left;
+     font-size: 12px;
+     text-align: center;
+    }
+
+    h1, h3 {
+    font-size: 20px;
+    }
+
+.table-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* Change table font size */
+.black-hue-table th, .black-hue-table td {
+    font-size: 14px;
+}
+
+.black-hue-table th, .black-hue-table td {
+    padding: 10px;
+}
+
+.black-hue-table tr {
+    padding: 20px;
+}
+
+.black-hue-table {
+    width: 90%;
+}
+    
+
+    footer p {
+    font-size: 20px;
+    }
+    
+
+    .social a {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    }
+    }
+  
+    @media only screen and (max-width: 480px) {
+      
+    nav{
+      flex-wrap: column;
+      display:flex;
+      justify-content: center;
+      }
+
+    nav ul li{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 0;
+      text-align: left;
+      font-size: 2px;
+      }
+      
+    .table-container {
+        margin-top: 100px;
+        margin-left:20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+
+    .black-hue-table th {
+        font-size: 12px;
+    }
+
+    .black-hue-table td {
+        font-size: 10px;
+    }
+      
+    footer p
+    {
+      font-size: 15px;
+    }
+      
+    footer p:nth-child(2){
+      width: 80%;
+    }
+
+    .social{
+      justify-content: center;
+      }
+    }
+      
+      @media only screen and (max-width: 320px) {
+      nav
+      {
+        flex-direction: column;
+      }
+      h1{
+      font-size: 50px;
+      }
+      h3{
+      font-size: 20px;
+      }
+      }
+     
+      

@@ -1,0 +1,5 @@
+Reasons for Bonus:
+
+1. Instead of using one page for my entire portfolio I used multiple one each for each part of the partfolio
+2. I created two responsive css one for max-width:768px and other for max-width: 480px
+3. 

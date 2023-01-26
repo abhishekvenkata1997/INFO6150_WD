@@ -1,5 +1,5 @@
-The 1A page is for a website called coffee shop with a home page that has a menu bar with options to see the 
-Menu, Location, Hours, Contact and a SignUp option.
+The portfolio page is for a website that has several sections like:
+Home, About, Education, Experience, Skills, Resume and Certifications
 
 The home page has a navigation bar that moves to you the specific section mentioned in the index page. 
 
@@ -23,6 +23,7 @@ The home page has a navigation bar that moves to you the specific section mentio
 17. <footer> - A footer typically contains information about the website or the document, such as the author, 
                copyright information, and links to related resources.
 18. <label> - It is used to provide a text description for a form control such as a text field, checkbox or radio button.
+  
 
 CSS Tags:
 
@@ -37,3 +38,12 @@ CSS Tags:
                                                   list-style, text-decoration and text-align and display 
 8. <input> email, password, submit{} - Adding style like font-size, padding, margin and border to the input types
 9. <button> submit, submit{}: hover: Adding styles like background-color, font-size, padding, border, margin and cursor. and color for hover
+10. float - In HTML, "float" is a CSS property that allows an element to be positioned horizontally, to the left or right of a parent container. 
+            This allows text or other elements to wrap around the floated element.
+11. overflow - "Overflow" is another CSS property that determines what happens when the content of an element exceeds the size of the element's box. 
+            For example, if the overflow property is set to "hidden," the content that exceeds the size of the element's box will be hidden, 
+            and if it is set to "scroll," scrollbars will be added to the element so that the content can be scrolled.
+
+12. @media (max-width: 600px) - The "max-width" property is used to set the maximum width of an element. 
+                        This can be useful when designing responsive websites, as it allows the element to 
+                        adjust its size based on the size of the viewport or the parent container.
