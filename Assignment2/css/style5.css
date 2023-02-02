@@ -1,0 +1,267 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+  }
+  .hero{
+    height:100vh;
+    width:100%;
+    background-image: url(../images/bg-image.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  .logo
+  {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  
+  }
+  
+  span{
+    color: #f9004d
+  }
+  
+  nav ul li
+  {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px; 
+  }
+  
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  nav ul li a:hover
+  {
+    color:#f9004d;
+    transition: 0.4s;
+  }
+  
+  .btn
+  {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px  25px;
+    border-radius: 30px;
+    transition: transform .4s;
+  }
+  
+  .btn:hover
+  {
+    transform: scale(1.2);
+  }
+
+  .image-gallery {
+    text-align: center;
+    margin: 20px; 
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .image-card {
+    width: 25%; 
+    margin: 10px; 
+    text-align: center; 
+  }
+  
+  img {
+    width: 80%; 
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 10px;
+    background-color:#191919;
+  }  
+
+  footer
+  {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p:nth-child(1)
+  {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;  
+  }
+  
+  footer p:nth-child(2)
+  {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  
+  }
+  
+  .social
+  {
+    display: flex;
+  }
+  
+  .social a
+  {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social a:hover
+  {
+    transform: scale(1.3);
+    transition: 0.3s;
+  }
+  
+  .end
+  {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .main {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo {
+    font-size: 25px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    nav ul li {
+    padding: 10px;
+    }
+    
+    nav ul li a{
+     float:left;
+     font-size: 12px;
+     text-align: center;
+    }
+
+    h1, h3 {
+    font-size: 20px;
+    }
+    
+    .image-container
+    {
+        width:100%;
+    }
+
+    .image-card
+    {
+        width: 40%;
+        margin: 3%;
+    }
+
+    footer p {
+    font-size: 20px;
+    }
+
+    .social a {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    }
+    }
+  
+    @media only screen and (max-width: 480px) {
+      nav{
+      flex-wrap: column;
+      justify-content: center;
+      }
+      nav ul li{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 0;
+      text-align: left;
+      font-size: 2px;
+      }
+      .image-container
+      {
+          width:100%;
+      }
+  
+      .image-card
+      {
+          width: 70%;
+          margin: 3%;
+      }
+      
+      footer
+      {
+        margin-top: 400px;
+        height:10%;
+        
+      }
+      footer p:nth-child(2){
+        width: 80%;
+      }
+      .social{
+      justify-content: center;
+      }
+      }
+      
+      @media only screen and (max-width: 320px) {
+      nav
+      {
+        flex-direction: column;
+      }
+      h1{
+      font-size: 30px;
+      }
+      h3{
+      font-size: 20px;
+      }
+      }
+     
+      
+      

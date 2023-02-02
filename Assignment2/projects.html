@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href = "https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -11,14 +11,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<section>
+<body>
+    <!--hero section-->
     <div class="hero">
         <nav>
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
                 <li>
                     <a href="index.html">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    <a href="#about-val">About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     <a href="education.html">Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     <a href="experience.html">Experience&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     <a href="projects.html">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -29,41 +29,45 @@
             </ul>
             <a href="mailto:tiruchunapalli.a@northeastern.edu" class="btn">Email Me</a>
         </nav>
+    
 
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Abhishek <span>Venkata</span></h1>
-            <h3>I am a Software Engineer</h3>
-            <div class="newsletter">
-                <form>
-                    <input type="email" name="email" id="mail" placeholder="Enter your email">
-                    <input type="submit"name="submit" value="Get in Touch">
-                </form>
-            </div>
-        </div>
+        <div class="table-container">
+            <table class="black-hue-table">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Description</th>
+                  <th>Languages Used</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> Insurance Management System &nbsp;<a href="https://github.com/abhishekvenkata1997/InsuranceManagementWJavaFX"><i class="fa-brands fa-github"></i></a></td>
+                  <td>A Java and JavaFX project to setup insurance plan for students of northeastern university</td>
+                  <td class="pink">C++, Java, MySQL</td>
+                  <td class="oneline">Nov 2022</td>
+                </tr>
+                <tr>
+                  <td> JIRA - Task Management tool &nbsp;<a href="https://github.com/abhishekvenkata1997/JIRAwSpringBoot"><i class="fa-brands fa-github"></i></a></td>
+                  <td>A Spring boot enterprise application using Hibernate to build a web page that 
+                    replicates the use of JIRA a task management system commonly used in MNCs</td>
+                  <td class="pink">Spring Boot, Java, Hibernate</td>
+                  <td class="oneline">Dec 2022</td>
+                </tr>
+                <tr>
+                  <td>Stock Web Scrawler&nbsp;<a href="https://github.com/abhishekvenkata1997/stockwebscrawl1"><i class="fa-brands fa-github"></i></a></td>
+                  <td>A web scrawler using python that tracks a set list of stocks that fall lower or over certain percentage points</td>
+                  <td class="pink">Python, MySQL, Web Scrawlers</td>
+                  <td class="oneline">May 2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
     </div>
-
-    <section id="about-val">
-    <section class="about">
-        <div class="main">
-            <img src="images/background-image.jpeg">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <h5>Developer <span>& Designer</span></h5>
-                <p>
-                    I am a highly motivated and experienced software professional, with a strong background in the technology industry. 
-                    I have spent the last three years working as a staff consultant at Oracle India. During my time at Oracle, I was 
-                    responsible for delivering high-quality software solutions to clients across a variety of industries. <br/><br/>
-                    Currently, I am pursuing a graduate course in software engineering at Northeastern University, where I am learning 
-                    the latest software development methodologies and technologies. I am excited to apply my knowledge and skills to 
-                    real-world projects and am actively seeking an internship in software development.
-                </p>
-                    
-            </div>
-        </div>
-    </section>
-    </section>
-
+    <!--Footer start-->
+    </body>
     <footer>
         <p>Abhishek Venkata</p>
         <p>For more information contact me on the below mentioned applications</p>
@@ -75,5 +79,4 @@
         </div>
         <p class="end">Copyright By Abhishek Venkata</p>
     </footer>
-</body>
-</html>
+</html> 
