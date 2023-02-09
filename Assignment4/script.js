@@ -23,7 +23,7 @@ var validZipCode = false;
 var regExName = /^[a-z A-Z]+$/;
 var regExPhone = /^\d{3}-\d{3}-\d{4}$/;
 var regExEmailId = /^([a-z\d\.]+@northeastern.edu)$/; 
-var regExZipCode = /^\d{6}$/;
+var regExZipCode = /^\d{5}$/;
 
 var firstName = document.getElementById("firstName");
 firstName.addEventListener("input", validate);
