@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe's Coffee Shop</title>
+    <link rel="icon" href="joes.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="joes.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Joe's Coffee Shop</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="signup.html">SignUp</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <section id="menu" class="grid-menu">
+        <h2>Our Menu</h2>
+        <p>
+          At Joe's, we take pride in serving only the finest quality coffee
+          beans, roasted to perfection and cursed to order. Our menu features a
+          wide variety of coffee drinks, including classic favorites like
+          cappuccinos and lattes, as well as unique creations like our signature
+          "Joe's Special" and seasonal flavors. We also offer a selection of
+          teas, hot chocolate, and cold drinks for those looking for something
+          different.
+        </p>
+        <div class="menu-items">
+          <div class="menu-item">
+            <img
+              src="espresso.jpeg"
+              alt="espresso"
+              width="250"
+              height="200"
+            />
+            <h3>Espresso</h3>
+            <p>A strong and bold coffee made with high-quality beans.</p>
+            <p>$2.50</p>
+          </div>
+          <div class="menu-item">
+            <img
+              src="cappucino.jpeg"
+              alt="cappucino"
+              width="250"
+              height="200"
+            />
+            <h3>Cappuccino</h3>
+            <p>
+              A classic coffee made with espresso, steamed milk, and foam.
+            </p>
+            <p>$3.50</p>
+          </div>
+          <div class="menu-item">
+            <img src="latte.jpeg" alt="latte" width="250" height="200" />
+            <h3>Latte</h3>
+            <p>A smooth and creamy coffee made with espresso and steamed milk.</p>
+            <p>$4.00</p>
+          </div>
+          <div class="menu-item">
+            <img src="mocha.jpeg" alt="mocha" width="250" height="200" />
+            <h3>Mocha</h3>
+            <p>
+              A rich and chocolatey coffee made with espresso, steamed milk, and
+              syrup.
+            </p>
+            <p>$4.50</p>
+          </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="latte.jpeg" alt="latte" width="250" height="200" />
+            </div>
+            <div class="menu-item-description">
+              <h3>Cafe Latte</h3>
+              <p>
+                A classic coffee drink made with espresso and steamed milk,
+                topped with a small layer of foam.
+              </p>
+              <p>$3.50</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            At Joe's, we take pride in serving only the finest quality coffee beans, roasted to perfection and cursed to order. Our menu features a wide variety of coffee drinks, including classic favorites like cappuccinos and lattes, as well as unique creations like our signature "Joe's Special" and seasonal flavors. We also offer a selection of teas, hot chocolate, and cold drinks for those looking for something different.
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <p>&copy; 2023 Coffee House. All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+  </html>  

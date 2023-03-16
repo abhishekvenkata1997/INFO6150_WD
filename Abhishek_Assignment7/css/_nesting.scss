@@ -1,0 +1,57 @@
+.hero {
+    background-image: url("coffee-shop.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .menu {
+    margin: 3rem auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+  
+    .menu-item {
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      padding: 2rem;
+      text-align: center;
+  
+      img {
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+  
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
