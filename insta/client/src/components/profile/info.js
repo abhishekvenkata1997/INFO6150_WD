@@ -4,10 +4,13 @@ import {useSelector, useDispatch} from 'react-redux'
 import Avatar from './../Avatar'
 import EditProfile from './EditProfile'
 import FollowBtn from "../FollowBtn";
+import Followers from "./Followers"
+import Following from "./Following"
 
 import { getProfileUsers } from './../../redux/actions/profileAction'
 const Info = () => {
 
+    console.log("Inside Info")
     const { id } = useParams()
     const { auth, profile } = useSelector(state => state)
     const dispatch = useDispatch()
@@ -22,9 +25,11 @@ const Info = () => {
         if(id === auth.user._id)
         {
             setUserData([auth.user])
-        }else{
+        }else
+        {
             dispatch(getProfileUsers({users: profile.users, id, auth}))
             const newData = profile.users.filter(user => user._id === id)
+            console.log("NEW DATA:"+newData)
             setUserData(newData)
         }           
     },[id, auth, dispatch, profile.users])
@@ -44,7 +49,7 @@ const Info = () => {
                                     <button className="btn btn-outline-info"
                                     onClick={() => setOnEdit(true)}>
                                         Edit Profile
-                                    </button> : <FollowBtn/>
+                                    </button> : <FollowBtn user={user}/>
                                 }
                                 
                             </div>
@@ -73,6 +78,19 @@ const Info = () => {
                                         setOnEdit={setOnEdit} />
                         }
 
+                        {
+                            showFollowers &&
+                            <Followers 
+                            users={user.followers} 
+                            setShowFollowers={setShowFollowers}/>
+                        }
+
+                        {
+                            showFollowing &&
+                            <Following 
+                            users={user.following} 
+                            setShowFollowing={setShowFollowing}/>
+                        }
                 </div>
                 ))
             }
