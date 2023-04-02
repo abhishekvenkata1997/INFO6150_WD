@@ -1,8 +1,8 @@
-import {React, useState} from 'react'
-import {Link} from 'react-router-dom'
-import { } from '../redux/actions/authActions'
+import {React, useState, useEffect} from 'react'
+import {Link, useNavigate} from 'react-router-dom'
 import {login} from '../redux/actions/authActions'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+
 
 const Login = () => {
 
@@ -12,7 +12,13 @@ const Login = () => {
 
     const [typePass, setTypePass] = useState(false)
 
+    const { auth} = useSelector(state => state)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if(auth.token) navigate("/")
+    },[auth.token,navigate])
 
     const handleChangeInput = e => {
         const {name, value} = e.target
