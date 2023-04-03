@@ -12,9 +12,10 @@ import {} from './redux/actions/authActions'
 
 import Alert from './components/alert/Alert'
 import Header from './components/header/header'
+import StatusModal from './components/StatusModal'
 function App() {
 
-  const { auth } = useSelector(state => state)
+  const { auth, status } = useSelector(state => state)
   console.log("auth token in Login Component:", auth.token)
   const dispatch = useDispatch()
  console.log("AUTH TOKEN:"+auth.token)
@@ -29,6 +30,7 @@ function App() {
           <Router>
             <Alert/>
             {auth.token && <Header/>}
+            {status && <StatusModal/>}
             <Routes>
               <Route exact path='/' element={auth.token ? <Home /> : <Login />} />
               <Route exact path='/register' element = {<Register/>} />
