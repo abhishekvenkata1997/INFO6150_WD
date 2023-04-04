@@ -8,7 +8,7 @@ import Register from './pages/register'
 
 import { refreshToken } from './redux/actions/authActions';
 import {useSelector, useDispatch} from 'react-redux'
-import {} from './redux/actions/authActions'
+import { getPosts } from './redux/actions/postAction'
 
 import Alert from './components/alert/Alert'
 import Header from './components/header/header'
@@ -19,9 +19,17 @@ function App() {
   console.log("auth token in Login Component:", auth.token)
   const dispatch = useDispatch()
  console.log("AUTH TOKEN:"+auth.token)
+
+ 
   useEffect(() => {
     dispatch(refreshToken())
   },[dispatch])
+
+  useEffect(() => {
+    if(auth.token) dispatch(getPosts(auth.token))
+  },[dispatch, auth.token])
+
+
   return (
     <>
       <input type="checkbox" id="theme" />

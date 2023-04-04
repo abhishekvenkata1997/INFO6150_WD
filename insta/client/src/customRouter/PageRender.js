@@ -18,7 +18,8 @@ const PageRender = () => {
     
     const {page, id} = useParams()
     const {auth} = useSelector(state => state)
-    
+    const {profile} = useSelector(state=>state)
+    const {homePosts} = useSelector(state=>state)
     let pageName = "";
 
     if(auth.token){
@@ -30,7 +31,7 @@ const PageRender = () => {
         }
     }
     
-    console.log(pageName);
+    //console.log(pageName);
     return generatePage(pageName);
 }
 

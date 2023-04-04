@@ -28,9 +28,10 @@ const Info = () => {
         }else
         {
             dispatch(getProfileUsers({users: profile.users, id, auth}))
-            const newData = profile.users.filter(user => user._id === id)
-            console.log("NEW DATA:"+newData)
-            setUserData(newData)
+            const user = profile.users.find(user => user._id === id);
+            const newData = {...user,}
+            const newArray = [newData]
+            setUserData(newArray)
         }           
     },[id, auth, dispatch, profile.users])
 
