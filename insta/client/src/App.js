@@ -15,7 +15,7 @@ import Header from './components/header/header'
 import StatusModal from './components/StatusModal'
 function App() {
 
-  const { auth, status } = useSelector(state => state)
+  const { auth, status, modal } = useSelector(state => state)
   console.log("auth token in Login Component:", auth.token)
   const dispatch = useDispatch()
  console.log("AUTH TOKEN:"+auth.token)
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <input type="checkbox" id="theme" />
-      <div className="App">
+      <div className={`App ${(status || modal) && 'mode'}`}>
         <div className="main">
           <Router>
             <Alert/>

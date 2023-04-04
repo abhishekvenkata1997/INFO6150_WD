@@ -1,5 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import PostCard from '../PostCard'
+
 import CardBody from './post_card/CardBody'
 import CardHeader from './post_card/CardHeader'
 import CardFooter from './post_card/CardFooter'
@@ -9,11 +11,7 @@ const Posts = () => {
         <div className='posts'>
            {
             homePosts.posts.map(post => (
-                <div key={post._id} className="card my-3">
-                    <CardHeader post={post}/>
-                    <CardBody post={post}/>
-                    <CardFooter post={post}/>
-                </div>
+                <PostCard key={post._id} post={post}/>
             ))
            }
         </div>

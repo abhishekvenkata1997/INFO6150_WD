@@ -8,6 +8,7 @@ import Followers from "./Followers"
 import Following from "./Following"
 
 import { getProfileUsers } from './../../redux/actions/profileAction'
+import { GLOBALTYPES } from "../../redux/actions/globalTypes";
 const Info = () => {
 
     console.log("Inside Info")
@@ -34,6 +35,21 @@ const Info = () => {
             setUserData(newArray)
         }           
     },[id, auth, dispatch, profile.users])
+
+    useEffect(() => {
+        if(showFollowers || showFollowing || onEdit )
+        {
+            dispatch({
+                type: GLOBALTYPES.MODAL,
+                payload: true
+            })
+        }else{
+            dispatch({
+                type: GLOBALTYPES.MODAL,
+                payload: false
+            })
+        }
+    },[showFollowers, showFollowing, onEdit, dispatch])
 
     return (
         <div className="info">
