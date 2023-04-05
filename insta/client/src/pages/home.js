@@ -6,6 +6,7 @@ import LoadIcon from './../images/loading.gif'
 
 import Status from './../components/home/Status'
 import Posts from './../components/home/Posts'
+import RightSideBar from '../components/home/RightSideBar'
 
 const Home = () => {
 
@@ -26,7 +27,7 @@ const Home = () => {
                 </div> 
 
                 <div className='col-md-4'>
-                    right Sidebar
+                    <RightSideBar/>
                 </div>  
         </div>
     )
