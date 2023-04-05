@@ -80,6 +80,10 @@
    @import url('./comments.css');
 
 
+   /* -------POST THUMB ------------*/
+   @import url('./post_thumb.css');
+
+
    .mode{
     width: 100%;
     height: 100vh;

@@ -22,9 +22,12 @@ const InputComment = ({children, post, onReply, setOnReply}) => {
             likes: [],
             user: auth.user,
             createdAt: new Date().toISOString(),
+            reply: onReply && onReply.commentId,
+            tag: onReply && onReply.user
         }
+        //console.log(newComment)
         
-        dispatch(createComment(post, newComment, auth))
+        dispatch(createComment({post, newComment, auth}))
 
         if(setOnReply) return setOnReply(false);
     }
