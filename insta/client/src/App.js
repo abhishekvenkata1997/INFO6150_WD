@@ -10,7 +10,7 @@ import { refreshToken } from './redux/actions/authActions';
 import {useSelector, useDispatch} from 'react-redux'
 import { getPosts } from './redux/actions/postAction'
 import {getSuggestions} from './redux/actions/suggestionAction'
-
+import {getNotifies} from './redux/actions/notifyAction'
 import io from 'socket.io-client'
 import Alert from './components/alert/Alert'
 import Header from './components/header/header'
@@ -39,8 +39,21 @@ function App() {
     if(auth.token) {
       dispatch(getPosts(auth.token))
       dispatch(getSuggestions(auth.token))
+      dispatch(getNotifies(auth.token))
     }
   },[dispatch, auth.token])
+
+  useEffect(() => {
+    if (!("Notification" in window)) {
+      alert("This browser does not support desktop notification");
+    }
+    else if (Notification.permission === "granted") {}
+    else if (Notification.permission !== "denied") {
+      Notification.requestPermission().then(function (permission) {
+        if (permission === "granted") {}
+      });
+    }
+  },[])
 
 
   return (
