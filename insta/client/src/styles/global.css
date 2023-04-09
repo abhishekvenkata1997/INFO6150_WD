@@ -84,6 +84,14 @@
    @import url('./post_thumb.css');
 
 
+   /*-------MESSAGE ---------------*/
+   @import url('./message.css');
+
+
+   /*--------ICONS -----------------*/
+   @import url('./icons.css');
+
+   
    /* -------Responsive -----*/
 
 @media (max-width: 768px) {
@@ -130,6 +138,10 @@
   }
   .wrap_page {
     margin-bottom: 60px;
+  }
+
+  .message {
+    height: calc(100vh - 150px);
   }
 }
 
