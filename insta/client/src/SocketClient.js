@@ -4,6 +4,7 @@ import { POST_TYPES } from './redux/actions/postAction'
 import { GLOBALTYPES } from './redux/actions/globalTypes'
 import { NOTIFY_TYPES } from './redux/actions/notifyAction'
 import audiobell from './audio/notify_sound.mp3'
+import { MESS_TYPES } from './redux/actions/messageAction'
 
 const spawnNotification = (body, icon, url, title) => {
     let options = {
@@ -90,8 +91,7 @@ const SocketClient = () => {
             return () => socket.off('unFollowToClient')
         },[socket, dispatch, auth])
 
-    //Notify
-    // Unfollow  
+    //Notify  
     useEffect(() => {
         socket.on('createNotifyToClient', msg =>{
                 dispatch({type: NOTIFY_TYPES.CREATE_NOTIFY, payload: msg})
@@ -115,6 +115,17 @@ const SocketClient = () => {
             return () => socket.off('removeNotifyToClient')
         },[socket, dispatch, auth])
 
+    //Message
+    useEffect(() => {
+        socket.on('addMessageToClient', msg =>{
+                dispatch({
+                    type: MESS_TYPES.ADD_MESSAGE,
+                    payload: msg
+                })
+            })
+                
+            return () => socket.off('addMessageToClient')
+        },[socket, dispatch, auth])
     
     return (
         <>

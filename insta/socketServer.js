@@ -116,11 +116,18 @@ const SocketServer = (socket) => {
 );
         if(uniqueClients.length > 0)
         {
-            console.log("React out now")
+            //console.log("React out now")
             uniqueClients.forEach(client => {
                 socket.to(`${client.socketId}`).emit('removeNotifyToClient',msg)
             })
         }
+     })
+
+     //Message
+     socket.on('addMessage', msg => {
+        //console.log(msg)
+        const user = users.find(user => user.id === msg.recipient)
+        user && socket.to(`${user.socketId}`).emit('addMessageToClient', msg)
      })
 }
 

@@ -3,6 +3,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import { GLOBALTYPES } from './../redux/actions/globalTypes'
 import {createPost, updatePost} from './../redux/actions/postAction'
 import Icons from './Icons'
+import {imageShow, videoShow} from './../utils/mediaShow'
 
 const StatusModal = () => {
 
@@ -115,25 +116,7 @@ const StatusModal = () => {
         }
     },[status])
 
-    const imageShow = (src) => {
 
-        return (
-            <img src={src}
-            alt="images" className='img-thumbnail'
-            style={{filter : theme ? 'invert(1)' : 'invert(0)'}}
-            />
-        )
-    }
-
-    const videoShow = (src) => {
-
-        return (
-            <video controls src={src}
-            alt="images" className='img-thumbnail'
-            style={{filter : theme ? 'invert(1)' : 'invert(0)'}}
-            />
-        )
-    }
     
 
     return (
@@ -174,18 +157,18 @@ const StatusModal = () => {
                             images.map((img, index) => (
                                 <div key={index} id="file_img">
                                     {
-                                        img.camera ? imageShow(img.camera)
+                                        img.camera ? imageShow(img.camera, theme)
                                         : img.url
                                         ? <>
                                         {
                                             img.url.match(/video/i) ? 
-                                            videoShow(img.url) : imageShow(img.url)
+                                            videoShow(img.url) : imageShow(img.url, theme)
                                         }
                                         </>
                                         : <>
                                         {
                                             img.type.match(/video/i) ? 
-                                            videoShow(URL.createObjectURL(img)) : imageShow(URL.createObjectURL(img))
+                                            videoShow(URL.createObjectURL(img), theme) : imageShow(URL.createObjectURL(img), theme)
                                         }
                                         </>
                                     }
